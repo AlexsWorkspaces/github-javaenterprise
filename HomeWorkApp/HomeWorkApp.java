@@ -21,7 +21,7 @@ public class HomeWorkApp {
         int value = 178;
         if (value <= 0) {
             System.out.println("Красный");
-        } else if (value > 0 && value <= 100) {
+        } else if (value <= 100) {
             System.out.println("Желтый");
         } else {
             System.out.println("Зеленый");
@@ -39,7 +39,8 @@ public class HomeWorkApp {
     }
 
     static boolean checkIfSumIsInRange(int number1, int number2) {
-        return ((number1 + number2 >= 10) && (number1 + number2 <= 20));
+        int sum = number1 + number2;
+        return ((sum >= 10) && (sum <= 20));
     }
 
     static void checkIfNumberIsPositive(int number) {
@@ -51,7 +52,7 @@ public class HomeWorkApp {
     }
 
     static boolean checkIfNumberIsNegative(int number) {
-        return (number < 0);
+        return number < 0;
     }
 
     static void printLineNTimes(String line, int n) {
